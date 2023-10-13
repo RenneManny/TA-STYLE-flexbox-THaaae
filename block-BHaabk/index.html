@@ -1,0 +1,78 @@
+<!-- 
+1. Create a simple page having a header, main content, and a footer.
+
+2. Inside the header keep the brand name to the left and all the navigation to the right.
+
+4. Inside the main content take an article section having two columns. In the first column put a heading and some introductory text of the article and in the second column take an image.
+
+5. After the article section, take a gallery section, in which there will be two rows and in both the row there will be three columns. Each column must have a different image.
+
+6. After the gallery section footer will come.
+
+7. Use flexbox properties and values to create columns.
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box</title>
+    <link rel="stylesheet" href="assests/stylesheets/style.css">
+ </head>
+ <body>
+    <header>
+        <div class="container clearfix">
+           <a href=""> <img src="assests/images/logo.png" alt="" class="brand"></a>
+            <nav>
+                <a href="">Home</a>
+                <a href="">Contact Us</a>
+                <a href="">Testimonials</a>
+                <a href="">Blog</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article>
+            <div class="flex">
+                <div class="text">
+                    <h1>Lorem, ipsum.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex molestiae, aut ipsum quos sit consequatur maiores laborum mollitia ducimus fuga. Quae pariatur dicta reprehenderit necessitatibus enim. Illum itaque expedita cumque necessitatibus dolorem nesciunt tenetur reprehenderit sequi accusamus dolor. Nam voluptate veritatis officia doloribus expedita accusamus voluptas tempore harum, voluptates nobis, asperiores repellendus commodi! </p>
+                </div>
+                <div class="img">
+                    <img src="assests/images/paraimg.png" alt="">
+                </div>
+            </div>
+        </article>
+        <section>
+            <div class="flex">
+                <div class="img1">
+                    <img src="assests/images/1.jpg" alt="">
+                </div>
+                <div class="img1">
+                    <img src="assests/images/2.png" alt="">
+                </div>
+                <div class="img1">
+                    <img src="assests/images/3.jpg" alt="">
+                </div>
+            </div>
+            <div class="flex">
+                <div class="img1">
+                    <img src="assests/images/4.jpg" alt="">
+                </div>
+                <div class="img1">
+                    <img src="assests/images/5.jpg" alt="">
+                </div>
+                <div class="img1">
+                    <img src="assests/images/6.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="ftr">
+            <p>&copy Altcampus All Right Reserved.</p>
+        </div>
+    </footer>
+ </body>
+ </html>
