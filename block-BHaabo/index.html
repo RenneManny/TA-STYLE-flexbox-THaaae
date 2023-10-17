@@ -1,0 +1,58 @@
+<!-- 
+- Create a page using flexbox according to the layout shown below.
+
+![Flex Shrink Property](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/flexbox/ex-2.png)
+
+- Using CSS resets is necessary.
+- Use semantic tags and keep the nesting and indentation proper. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b529531a21.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <div class="container flex">
+        <a class="brand " href=""><img src="assets/icons/logo.png" alt=""></a>
+        <nav>
+            <a href="#"><img src="assets/icons/bell.svg" alt="bell"></a>
+            <a href="#"><span>Sarah Jones</span> <img src="assets/icons/user.svg" alt="Ui"></a>
+        </nav>
+    </div>
+</header>
+    <main class="container flex padding">
+        <aside class="sidebar ">
+            <nav>
+                <a href=""><img src="assets/icons/dashboard.svg" alt=""><span>Dashboard</span></a>
+                <a href="" class="active"><img src="assets/icons/article.svg" alt=""><span>Articles</span></a>
+                <a href=""><img src="assets/icons/analytics.svg" alt=""><span>Analytics</span></a>
+                <a href=""><img src="assets/icons/inbox.svg" alt=""><span>Inbox</span></a>
+                <a href=""><img src="assets/icons/setting.svg" alt=""><span>Settings</span></a>
+            </nav>
+            <button><img src="assets/icons/log-out.svg" alt=""><span>Logout</span></button>
+        </aside>
+        <article class="article">
+            <img src="assets/01.png" alt="">
+            <h1>Why we are doing Altcampus?</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex illo sed corporis, dolor eveniet, eligendi nobis harum optio alias nulla autem perspiciatis quisquam aperiam qui amet ab ipsa, totam voluptatibus maiores facere modi. Quae soluta, illo earum expedita temporibus cupiditate aperiam magnam voluptatibus mollitia commodi voluptatem deleniti! Quod quam, nisi culpa assumenda nihil optio ab!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem error quo quaerat, eveniet reprehenderit <molestiae class="lorem12"></molestiae></p>
+            <a href="#" class="btn">Read More</a>
+        </article>
+    </main>
+    <footer>
+        <div class="ftr container flex">
+            <small>&copy Alcampus</small>
+            <nav>
+                <a href=""><i class="fa-brands fa-facebook" style="color: #9aaed0;"></i></a>
+                <a href=""><i class="fa-brands fa-twitter" style="color: #9aaed0;"></i></a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
